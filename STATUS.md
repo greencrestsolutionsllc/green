@@ -1,13 +1,16 @@
 commit: see latest commit on branch claude/repo-access-confirm-vb4a4g
 deployed:
-  landing: not deployed
-  calculator: not deployed
+  site: not deployed
+  analytics (calculator): not deployed, paused
 done:
-  - D-002 (partial): calculator model ported to pure TS `lib/calc/model.ts` + `lib/calc/model.test.ts` (node:test, no deps; `npm test` → 5/5 pass)
-  - process: design↔build handoff protocol added (`CLAUDE.md`, `design/`)
+  - brief: website redesign ("Greencrest Perspectives") written to `design/briefs/2026-09-website-redesign.md`; waiting for Design
+  - brand: logo extracted unchanged from the old site to `public/brand/logo-256.png` (256×256 PNG, the only size available)
+  - D-002 (paused by owner): calculator model in `lib/calc/model.ts`, 5/5 tests pass; will move to `/analytics` later
 questions:
-  - Spec: `design/README.md` is missing from the repo. Please re-export the spec (incl. §2 Model) and D-001 so build has a source of truth.
-  - Calculator / acceptance test / annual energy: the prototype's 8-bit profiles.json gives 21,580.3 MWh. The README's 21,579 comes from full-precision data (reference sum 3,828,952.6 kWh scaled to 250,000 sq ft = 21,579.05). Proposed default: test annual energy within ±0.05% until full-precision arrays are in Postgres, then assert exactly. Please confirm or send the full-precision source arrays.
+  - Redesign: see the 5 "Open questions for Design" in the brief (logo lockup, subscribe, video hosting, article typography, placeholder articles).
+  - Redesign: please assign `D-###` IDs per page (/, /perspectives, article, /topics, /video, /about) plus one for tokens.
+  - Logo: only a 256 px raster exists. Is there an SVG or high-resolution original?
+  - D-002 (when resumed): `design/README.md` §2 spec is missing from the repo; also the 8-bit vs full-precision annual-energy question (21,580 vs 21,579 MWh, test allows ±0.05%).
 deviations:
   - none
-acceptance: 21,580 MWh (spec 21,579; quantization, see questions) · $3.76M (3,764,000) ✓ · $157,635 ≈ $158K ✓
+acceptance: redesign not started (waiting for Design) · D-002 model: 21,580 MWh (spec 21,579) · $3.76M ✓ · $158K ✓

@@ -67,6 +67,10 @@ acceptance: <each acceptance check from the spec, ✓ or with actual value>
 ## Repo map
 
 - `design/` holds Design-owned material: spec, decisions, briefs, mockup exports.
-- `lib/calc/` has the savings model (pure TS, no I/O) and its tests.
+- `design/briefs/2026-09-website-redesign.md` is the current brief: the Perspectives site redesign.
+- `public/brand/logo-256.png` is the Greencrest logo (keep it unchanged).
+- `lib/calc/` has the savings model (pure TS, no I/O) and its tests. **Paused**: it
+  moves to `/analytics` later. Don't wire it into the redesigned site.
 - `data/profiles.json` holds the 8760-hour building and PV load profiles (8-bit quantized).
-- `index (8).html` is the current Greencrest landing page (single-file export).
+- `index (8).html` is the old fractional-leadership landing page. The redesign
+  replaces it; keep it for reference until the new site ships.
