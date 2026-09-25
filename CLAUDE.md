@@ -69,7 +69,8 @@ acceptance: <each acceptance check from the spec, ✓ or with actual value>
 - `design/` holds Design-owned material: spec (currently empty), decisions, brief template.
   The Perspectives site was cancelled (D-013); its code and spec live only in git history.
 - `public/brand/logo-256.png` is the Greencrest logo (keep it unchanged).
-- `lib/calc/` has the savings model (pure TS, no I/O) and its tests. **Paused**: it
-  moves to `/analytics` later.
+- `lib/calc/` has the savings model (pure TS, no I/O) and its tests. **Kept but hidden**
+  (owner, 2026-09-25): no page, link, route or deploy may expose it until the owner says so.
+  It will become `/analytics` later.
 - `data/profiles.json` holds the 8760-hour building and PV load profiles (8-bit quantized).
 - `index (8).html` is the old fractional-leadership landing page (D-001), kept for reference.

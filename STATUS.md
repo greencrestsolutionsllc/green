@@ -1,7 +1,7 @@
 commit: see latest commit on claude/repo-access-confirm-vb4a4g
 deployed:
   site: not deployed (the Perspectives site was never deployed)
-  analytics (calculator): not deployed, paused (D-002)
+  analytics (calculator): hidden by owner: kept in the repo, no page or link, not deployed (D-002)
 done:
   - D-013: Perspectives site removed on the owner's instruction (app, components, content, scripts, Next.js config, dependencies, spec, brief, mockups). The last full version is commit 6d8f1cf
   - D-002 (paused): calculator model in `lib/calc/model.ts`, 5/5 tests pass
