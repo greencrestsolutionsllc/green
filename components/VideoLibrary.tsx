@@ -73,7 +73,7 @@ function Player({ v }: { v: Video }) {
           <span className="player__time num">{fmt(t)} / {d ? fmt(d) : v.duration}</span>
           <button
             type="button" className="player__cc" aria-pressed={cc} onClick={() => setCc(c => !c)}
-            disabled={!v.captions} aria-label="Captions"
+            disabled={!v.captions} aria-label="CC (captions)"
           >CC</button>
         </div>
       </div>

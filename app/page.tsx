@@ -93,7 +93,7 @@ export default async function Home() {
             </div>
           </div>
           {fv && (
-            <Link href="/video/" className="poster" style={{ flex: '1.3 1 420px', display: 'block' }} aria-label={`Watch: ${fv.title}`}>
+            <Link href="/video/" className="poster" style={{ flex: '1.3 1 420px', display: 'block' }}>
               <span className="play play--sm" style={{ position: 'absolute', top: 24, left: 28, width: 52, height: 52 }} aria-hidden="true" />
               <span className="num" style={{ position: 'absolute', top: 26, right: 28, fontSize: 13, color: 'var(--night-text)' }}>{fv.duration}</span>
               <span style={{ position: 'absolute', left: 28, right: 28, bottom: 26 }}>

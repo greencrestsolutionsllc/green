@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve out",
-    "test": "node --test --experimental-strip-types lib/**/*.test.ts"
+    "test": "node --test --experimental-strip-types lib/**/*.test.ts",
+    "acceptance": "node scripts/acceptance.mjs"
   },
   "dependencies": {
     "@fontsource-variable/newsreader": "^5.3.0",
