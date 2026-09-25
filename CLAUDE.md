@@ -73,4 +73,5 @@ acceptance: <each acceptance check from the spec, ✓ or with actual value>
   (owner, 2026-09-25): no page, link, route or deploy may expose it until the owner says so.
   It will become `/analytics` later.
 - `data/profiles.json` holds the 8760-hour building and PV load profiles (8-bit quantized).
+- `docs/geminga/` holds Geminga's owner-supplied data scheme and the source investigations.
 - `index (8).html` is the old fractional-leadership landing page (D-001), kept for reference.
