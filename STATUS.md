@@ -6,7 +6,7 @@ done:
   - D-013: Perspectives site removed on the owner's instruction (app, components, content, scripts, Next.js config, dependencies, spec, brief, mockups). The last full version is commit 6d8f1cf
   - D-002 (paused): calculator model in `lib/calc/model.ts`, 5/5 tests pass
 questions:
-  - Next project: Geminga is waiting on `build-decisions-final.md` and `data-sources.md`, and on the choice of a new repo or this one.
+  - Next project: Geminga will be built in this repo (owner, 2026-09-25). Still waiting on `build-decisions-final.md` and `data-sources.md`, the metros decision (Houston + DFW vs Austin), and the Supabase project.
   - D-011: the SVG or 1024px logo original is still wanted if the logo is used again.
 deviations:
   - none
