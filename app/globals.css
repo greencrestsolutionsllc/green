@@ -208,3 +208,15 @@ button.play:disabled { cursor: default; }
 .grid-cards--related .card { padding: 22px 0 8px; }
 .grid-cards--related .card__title { font-size: 25px; line-height: 1.12; margin-top: 10px; }
 .grid-cards--related .meta { margin-top: 12px; }
+
+/* Topics (D-007) */
+.topics { margin-top: 56px; border-bottom: 1px solid var(--rule); }
+.topics__row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 48px; border-top: 1px solid var(--rule); padding: 30px 0; }
+.topics__row:first-child { border-top-color: var(--ink); }
+.topics__name { flex: 0 1 300px; font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 3vw, 40px); line-height: 1; letter-spacing: -0.015em; color: var(--ink); margin: 0; }
+.topics__text { flex: 1 1 380px; font-size: 17px; line-height: 1.6; color: var(--text-2); margin: 0; max-width: 40em; }
+.topics__link { flex: 0 0 auto; font-size: 13px; font-weight: 500; color: var(--accent); white-space: nowrap; }
+.topics__link:hover { color: var(--ink); }
+
+/* About (D-009) */
+.about__p { font-family: var(--serif); font-size: 20px; line-height: 1.6; color: #2E302C; margin: 18px 0 0; }
