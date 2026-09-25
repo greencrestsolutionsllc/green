@@ -220,3 +220,41 @@ button.play:disabled { cursor: default; }
 
 /* About (D-009) */
 .about__p { font-family: var(--serif); font-size: 20px; line-height: 1.6; color: #2E302C; margin: 18px 0 0; }
+
+/* Video player + grid (D-008) */
+.player { background: var(--night); color: var(--paper); }
+.player video { position: absolute; inset: 0; width: 100%; height: 100%; background: #000; }
+.player__title { position: absolute; left: clamp(20px, 4vw, 48px); right: clamp(20px, 4vw, 48px); top: clamp(20px, 4vw, 44px); pointer-events: none; }
+.player__cats { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; color: var(--night-label); }
+.player__h { font-family: var(--serif); font-size: clamp(26px, 3.6vw, 52px); line-height: 1.06; letter-spacing: -0.015em; margin-top: 10px; max-width: 14em; text-wrap: balance; }
+.player__big { position: absolute; left: 50%; top: 56%; transform: translate(-50%, -50%); width: 76px; height: 76px; }
+@media (max-width: 520px) { .player__big { top: 64%; width: 56px; height: 56px; } .player__h { font-size: 22px; } }
+/* The only gradient on the site: the control scrim (README §2). */
+.player__bar { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px clamp(16px, 3vw, 28px); display: flex; align-items: center; gap: 16px; background: linear-gradient(180deg, rgba(20, 32, 25, 0) 0%, rgba(20, 32, 25, 0.85) 100%); }
+.player__pp { background: none; border: 0; padding: 4px; cursor: pointer; display: flex; }
+.player__pp:disabled, .player__cc:disabled { cursor: default; }
+.ico-play { width: 0; height: 0; border-left: 10px solid var(--paper); border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+.ico-pause { width: 10px; height: 12px; border-left: 3px solid var(--paper); border-right: 3px solid var(--paper); }
+.player__seek { flex: 1; min-width: 0; appearance: none; -webkit-appearance: none; height: 2px; margin: 0; background: linear-gradient(to right, var(--paper) var(--p, 0%), rgba(246, 244, 238, 0.25) var(--p, 0%)); cursor: pointer; }
+.player__seek:disabled { cursor: default; }
+.player__seek::-webkit-slider-thumb { -webkit-appearance: none; width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 0; }
+.player__seek::-moz-range-thumb { width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 0; }
+.player__seek:disabled::-webkit-slider-thumb { opacity: 0; }
+.player__seek:disabled::-moz-range-thumb { opacity: 0; }
+.player__time { font-size: 12px; color: #D6DCD6; }
+.player__cc { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: #D6DCD6; background: none; border: 1px solid rgba(246, 244, 238, 0.5); padding: 2px 5px; border-radius: 0; cursor: pointer; }
+.player__cc[aria-pressed='true'] { background: var(--paper); color: var(--night); }
+.player__info { padding: 20px clamp(20px, 4vw, 48px) 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; }
+.player__info p { font-size: 15px; line-height: 1.55; color: #C6CEC7; margin: 0; max-width: 44em; }
+.player__sample { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; color: #E3A08F; margin-right: 12px; }
+
+.vgrid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 40px 36px; margin: 56px 0 0; }
+.vcard { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; display: flex; flex-direction: column; color: var(--ink); border-top: 2px solid var(--rule); padding-top: 16px; }
+.vcard[aria-current='true'] { border-top-color: var(--ink); }
+.vcard:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.vcard:hover .vcard__title { color: var(--accent); }
+.vcard .poster { display: block; }
+.vcard__ptitle { position: absolute; left: 16px; right: 16px; bottom: 14px; font-family: var(--serif); font-size: 19px; line-height: 1.15; text-wrap: balance; }
+.vcard__dur { position: absolute; top: 12px; right: 14px; font-size: 12px; color: #C6CEC7; }
+.vcard__title { font-family: var(--serif); font-size: 22px; line-height: 1.15; margin-top: 16px; text-wrap: balance; }
+.vcard__desc { font-size: 14.5px; line-height: 1.55; color: var(--text-3); margin-top: 8px; text-wrap: pretty; }
