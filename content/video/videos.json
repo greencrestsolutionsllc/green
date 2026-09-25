@@ -1,9 +1,0 @@
-{
-  "_note": "SAMPLE entries (design/README.md §4): the four articles double as sample videos. Dates and durations are samples. Add `src` (HLS .m3u8 or MP4 from Mux / Cloudflare Stream, D-008) and optional `captions` (.vtt) when a video is real.",
-  "videos": [
-    { "id": "ai-is-becoming-a-physical-industry", "title": "AI Is Becoming a Physical Industry", "desc": "Artificial intelligence may be digital in application, but its expansion increasingly depends on electricity, land, semiconductors, cooling, infrastructure and capital.", "categories": ["Technology", "Energy"], "date": "2026-09-18", "duration": "8:42", "sample": true },
-    { "id": "the-return-of-electricity-demand", "title": "The Return of Electricity Demand", "desc": "After decades of relatively modest growth, rising electricity demand is creating new questions about infrastructure, investment and industrial development.", "categories": ["Energy", "Infrastructure"], "date": "2026-09-04", "duration": "6:15", "sample": true },
-    { "id": "why-the-future-still-has-to-be-built", "title": "Why the Future Still Has to Be Built", "desc": "Digital technologies can scale rapidly. Power plants, transmission systems, factories and cities cannot. The difference between those speeds increasingly matters.", "categories": ["Technology", "Infrastructure"], "date": "2026-08-21", "duration": "11:03", "sample": true },
-    { "id": "what-energy-abundance-would-actually-change", "title": "What Energy Abundance Would Actually Change", "desc": "The consequences of energy availability extend beyond electricity prices, influencing production, transportation, computation and economic possibility.", "categories": ["Energy", "Economics"], "date": "2026-08-07", "duration": "7:28", "sample": true }
-  ]
-}

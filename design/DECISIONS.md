@@ -18,3 +18,4 @@
 | D-010 | Subscribe block: visual and 3 states | proposed | Answers brief Q2. Provider chosen by Build |
 | D-011 | Logo: full-colour mark at 32px in the header. A one-colour lockup is allowed only on the night surfaces | proposed | Answers brief Q1. The mark is unchanged. Owner to supply an SVG/1024px original; 256px is enough for 32px @2x |
 | D-012 | Article placeholders: structural placeholder text is allowed only with visible PLACEHOLDER marks | proposed | Answers brief Q5 |
+| D-013 | Perspectives site cancelled by the owner (2026-09-25). D-003–D-012 are withdrawn and their code and spec deleted | done | Recorded by Build on the owner's instruction. Recoverable from git history at `6d8f1cf` |

@@ -47,13 +47,7 @@ disagree only through `STATUS.md` → `questions` / `deviations`.
   Never silently "fix" the design.
 - Reference decision IDs in commit messages and code comments (`// D-002`).
 - Always finish a session by rewriting `STATUS.md` in the format below.
-- Commands (Node 22):
-  - `npm run dev`: local dev server
-  - `npm run build`: static export to `out/`
-  - `npm test`: unit tests (`lib/**/*.test.ts`)
-  - `npm run acceptance`: design/README.md §5 checks (copy vs brief, metrics, axe,
-    375px overflow, figure sources) against `out/`. Set `CHROMIUM=/opt/pw-browsers/chromium`
-    in cloud sessions.
+- Tests: `npm test` runs `lib/**/*.test.ts` (Node 22, no dependencies).
 
 ## `STATUS.md` format (Build → Design)
 
@@ -72,17 +66,10 @@ acceptance: <each acceptance check from the spec, ✓ or with actual value>
 
 ## Repo map
 
-- `design/` holds Design-owned material: spec, decisions, briefs, mockup exports.
-- `design/briefs/2026-09-website-redesign.md` is the brief for the Perspectives redesign;
-  the spec is `design/README.md`.
-- `app/` holds the Next.js App Router pages (static export). `components/` has the shared UI;
-  `components/mdx/` has the article components (Evidence, PullQuote, Figure, Fn/Notes).
-- `content/perspectives/*.mdx` holds articles (frontmatter: title, desc, categories, date,
-  readTime, showAuthorBio, related, placeholder). `content/video/videos.json` holds videos.
-- `lib/site.ts` has fixed copy and taxonomy (word for word from the brief).
+- `design/` holds Design-owned material: spec (currently empty), decisions, brief template.
+  The Perspectives site was cancelled (D-013); its code and spec live only in git history.
 - `public/brand/logo-256.png` is the Greencrest logo (keep it unchanged).
 - `lib/calc/` has the savings model (pure TS, no I/O) and its tests. **Paused**: it
-  moves to `/analytics` later. Don't wire it into the redesigned site.
+  moves to `/analytics` later.
 - `data/profiles.json` holds the 8760-hour building and PV load profiles (8-bit quantized).
-- `index (8).html` is the old fractional-leadership landing page. The redesign
-  replaces it; keep it for reference until the new site ships.
+- `index (8).html` is the old fractional-leadership landing page (D-001), kept for reference.
