@@ -19,30 +19,36 @@ them until each one is opened and its fields are confirmed.
 Third-party aggregators (Zabalist, Mercator, BuildPermitRadar and similar) are **not**
 sources. Zabalist is reference-only under the guardrails.
 
-## Field checklist (fill in per source once it's opened)
+## Field checklist (owner-required; fill in per source once it's opened)
 
 | Field | Sold Permits | Permit Portal | ArcGIS HPC | Open Records |
 |---|---|---|---|---|
-| Permit / application ID | ? | ? | ? | ? |
-| Project address | ? | ? | ? | ? |
-| Permit type | ? | ? | ? | ? |
-| Application / submittal date | ? | ? | ? | ? |
-| Issue date | ? | ? | ? | ? |
-| Permit status | ? | ? | ? | ? |
+| Official owner | ? | ? | ? | ? |
+| URL / API endpoint | ? | ? | ? | ? |
+| Machine-readable format | ? | ? | ? | ? |
+| Update frequency | ? | ? | ? | ? |
+| Unique record ID | ? | ? | ? | ? |
+| Permit / application number | ? | ? | ? | ? |
+| Address | ? | ? | ? | ? |
+| Project / work description | ? | ? | ? | ? |
 | Valuation | ? | ? | ? | ? |
 | Square footage | ? | ? | ? | ? |
-| Work description | ? | ? | ? | ? |
+| Application / submittal date | ? | ? | ? | ? |
+| Issue date | ? | ? | ? | ? |
+| Status | ? | ? | ? | ? |
 | Contractor / company | ? | ? | ? | ? |
-| Inspection events / statuses | ? | ? | ? | ? |
-| Certificate / final events | ? | ? | ? | ? |
+| Inspection events | ? | ? | ? | ? |
+| Final / CO event | ? | ? | ? | ? |
+| Terms / reuse restrictions | ? | ? | ? | ? |
 
 ## Next steps once network access is allowed
 
 1. Open sources 1–3 and fill in the checklist, with a sample of 20 commercial records per source.
 2. Check each source's terms of use and update frequency.
-3. Run a record-linkage test between TDLR TABS projects in Harris County and Houston permits
-   (address, name, owner, dates, value). Report the match rate and the failure types.
-4. Only then design the `HOUSTON_PERMITS` / `HOUSTON_INSPECTIONS` adapters.
+3. Test linkage against several known TDLR Harris County projects (address, name, owner,
+   dates, value). Report the match rate and the failure types.
+4. Send the owner the findings and recommended source(s), and **wait for approval** before
+   writing any Houston adapter.
 
 ## Hosts to allow in the environment's network settings
 
